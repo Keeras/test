@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:background="@drawable/harayobackground"
+    tools:context="main.ProfileActivity">
+
+    <TextView
+        android:id="@+id/tvProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="48dp"
+        android:text="Profile"
+        android:textColor="@color/colorText"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/ivBackPro"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/tvProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="71dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/etUserFName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/etUserFName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint=""
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="15sp"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProfile" />
+
+    <EditText
+        android:id="@+id/etUserPhoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="15sp"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserFName" />
+
+    <EditText
+        android:id="@+id/etUserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Email"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="15sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserPhoneNo" />
+
+    <EditText
+        android:id="@+id/etUserAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Address"
+        android:drawableLeft="@drawable/place"
+        android:drawablePadding="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserEmail" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/editText6"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginTop="28dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Confirm Password"-->
+<!--        android:inputType="textPassword"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editText5" />-->
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:textSize="20sp"
+        android:textColor="#F0C895"
+        android:background="@drawable/oval_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUserAddress"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <ImageView
+        android:id="@+id/ivBackPro"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/etUserFName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

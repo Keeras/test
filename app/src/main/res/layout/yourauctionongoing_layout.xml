@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/dialog_holo_light_frame">
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:id="@+id/yourAuctionOngoingBidsImgPhoto"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCYourAuctionOngoingBidsTitle"
+        android:layout_toRightOf="@+id/yourAuctionOngoingBidsImgPhoto"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:text="Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvYourAuctionOngoingBidPrice"
+        android:layout_toRightOf="@+id/yourAuctionOngoingBidsImgPhoto"
+        android:layout_below="@+id/tvCYourAuctionOngoingBidsTitle"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Bid Price : "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvYourAuctionOngoingBidsPrice"
+        android:layout_toRightOf="@+id/tvYourAuctionOngoingBidPrice"
+        android:layout_below="@+id/tvCYourAuctionOngoingBidsTitle"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Price"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvYouAuctionOngoingMarketValue"
+        android:layout_toRightOf="@+id/yourAuctionOngoingBidsImgPhoto"
+        android:layout_below="@+id/tvYourAuctionOngoingBidsPrice"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Market Value"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvYourAuctionOngoingMarketValue"
+        android:layout_toRightOf="@+id/tvYouAuctionOngoingMarketValue"
+        android:layout_below="@+id/tvYourAuctionOngoingBidsPrice"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Value"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvYourAuctionOngoingMarketValue"
+        android:id="@+id/btnYourOngoingEdit1"
+        android:text="Edit"/>
+
+</RelativeLayout>

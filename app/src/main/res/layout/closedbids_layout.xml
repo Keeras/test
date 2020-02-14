@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/dialog_holo_light_frame">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/closedBidsImgPhoto"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvClosedBidsBidsTitle"
+        android:layout_toRightOf="@+id/closedBidsImgPhoto"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:text="Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvClosedBidsBidsPrice"
+        android:layout_toRightOf="@+id/closedBidsImgPhoto"
+        android:layout_below="@+id/tvClosedBidsBidsTitle"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:text="Item Price"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvClosedBidsMarketValue"
+        android:layout_toRightOf="@+id/closedBidsImgPhoto"
+        android:layout_below="@+id/tvClosedBidsBidsPrice"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:text="Item Description"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStartYourBid"
+        android:text="Wanna Start Your Bid Again"
+        android:layout_below="@+id/tvClosedBidsMarketValue"
+        android:layout_toRightOf="@+id/closedBidsImgPhoto"/>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/dialog_holo_light_frame">
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:id="@+id/soldBidsImgPhoto"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSoldBidsBidsTitle"
+        android:layout_toRightOf="@+id/soldBidsImgPhoto"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:text="Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/tvSoldBidBidsPrice"
+        android:layout_toRightOf="@+id/soldBidsImgPhoto"
+        android:layout_below="@+id/tvSoldBidsBidsTitle"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Sold Price(NRS) : "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSoldBidsBidsPrice"
+        android:layout_toRightOf="@+id/tvSoldBidBidsPrice"
+        android:layout_below="@+id/tvSoldBidsBidsTitle"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Price"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/tvSoldBidMarketValue"
+        android:layout_toRightOf="@+id/soldBidsImgPhoto"
+        android:layout_below="@+id/tvSoldBidsBidsPrice"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Market Value(NRS): "/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSoldBidsMarketValue"
+        android:layout_toRightOf="@+id/tvSoldBidMarketValue"
+        android:layout_below="@+id/tvSoldBidsBidsPrice"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Val"/>
+
+</RelativeLayout>

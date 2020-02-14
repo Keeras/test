@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".BidDescriptionActivity">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:id="@+id/ivDesBidProfile"
+           android:src="@drawable/ic_launcher_background"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+
+               android:hint="Bid Title"
+               android:textSize="20sp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tvDesBidTitle"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+
+               android:hint="Bid Title"
+               android:textSize="20sp"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:hint="Bid Price"
+               android:textSize="20sp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tvDesBidPrice"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:hint="Bid Price"
+               android:textSize="20sp"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:hint="Bid Max Price"
+               android:textSize="20sp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tvDesBidMaxPrice"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:hint="Bid Max Price"
+               android:textSize="20sp"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:hint="Bid Market Value"
+               android:textSize="20sp"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tvDesBidMarketValue"
+               android:layout_below="@id/tvDesBidMaxPrice"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:layout_toEndOf="@id/ivDesBidProfile"
+               android:hint="Bid Market Value"
+               android:textSize="20sp"/>
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:hint="Bid Ending Date"
+               android:textSize="20sp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tvDesBidEndingDate"
+               android:layout_below="@id/tvDesBidMarketValue"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:layout_toEndOf="@id/ivDesBidProfile"
+               android:hint="Bid Ending Date"
+               android:textSize="20sp"/>
+
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:hint="Category"
+               android:textSize="20sp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/tvDesBidCategory"
+               android:layout_below="@id/tvDesBidEndingDate"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:layout_toEndOf="@id/ivDesBidProfile"
+               android:hint="Category"
+               android:textSize="20sp"/>
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:hint="Place Your Bid"
+               android:textSize="20sp"/>
+           <EditText
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/etDesPlaceYourBid"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="20dp"
+               android:hint="Your Bid Amount"
+               android:inputType="number"
+               android:textSize="20sp"/>
+       </LinearLayout>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/btnDesAddAmount"
+           android:text="Button"/>
+   </LinearLayout>
+
+</ScrollView>

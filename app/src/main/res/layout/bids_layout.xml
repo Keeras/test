@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:drawable/dialog_holo_light_frame">
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:id="@+id/imgPhoto"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBidsTitle"
+        android:layout_toRightOf="@+id/imgPhoto"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:text="Name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBidPrice"
+
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/imgPhoto"
+        android:layout_below="@+id/tvBidsTitle"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Bid Amount(NRS): "/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBidsPrice"
+        android:layout_toRightOf="@+id/tvBidPrice"
+        android:layout_below="@+id/tvBidsTitle"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Item Price"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMarketsValue"
+        android:layout_toRightOf="@+id/imgPhoto"
+
+        android:textStyle="bold"
+        android:layout_below="@+id/tvBidsPrice"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Market Value :"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMarketValue"
+        android:layout_toRightOf="@+id/tvMarketsValue"
+        android:layout_below="@+id/tvBidsPrice"
+        android:textSize="16sp"
+        android:layout_marginTop="50dp"
+        android:text="Value"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMarketValue"
+        android:id="@+id/btnOngoingBidFight"
+        android:text="Bid Fight"/>
+
+</RelativeLayout>
